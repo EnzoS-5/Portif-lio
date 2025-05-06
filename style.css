@@ -1,0 +1,135 @@
+/* Ajuste no body */
+body {
+    background-color: #000000;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+    overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
+/* Página inicial */
+.container {
+    display: flex;
+    align-items: flex-start; /* Alinha o texto ao topo da imagem */
+    justify-content: space-around; /* Distribui espaço entre a imagem e o texto */
+    gap: 1px; /* Espaço entre a imagem e o texto */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    width: 100%; /* Ocupa toda a largura da tela */
+    box-sizing: border-box; /* Inclui padding e bordas no tamanho total */
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+
+.image_container {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+    flex: 1; /* Garante que a imagem ocupe espaço proporcional */
+}
+
+.image_container img {
+    width: 500px; /* Ajuste o valor para o tamanho desejado */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.text_container {
+    flex: 1; /* Garante que o texto ocupe espaço proporcional */
+    color: white; /* Cor padrão do texto */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+}
+
+.text_container h1 {
+    margin-bottom: 20px; /* Espaço abaixo do h1 */
+    font-size: 48px; /* Aumenta o tamanho da fonte do h1 */
+}
+
+.ul_1 {
+    font-size: 24px; /* Aumenta o tamanho da fonte dos itens da lista */
+    line-height: 1.5; /* Aumenta o espaço entre as linhas */
+}
+
+.highlight {
+    color: green; /* Cor verde para "Enzo Santoro" */
+}
+
+/* Bloco com a seta verde */
+.info_block {
+    background-color: white; /* Fundo branco */
+    color: black; /* Cor do texto */
+    text-align: left;
+    padding: 10px 20px; /* Ajusta o espaçamento interno */
+    width: auto; /* Ajusta a largura automaticamente ao conteúdo */
+    max-width: 600px; /* Define um limite máximo para a largura */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 80px; /* Altura fixa para o bloco */
+    box-sizing: border-box; /* Inclui padding no tamanho total */
+    position: absolute; /* Posiciona o bloco dentro da primeira página */
+    bottom: 0.5px; /* Posiciona o bloco 20px acima do final da página */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta o posicionamento horizontal */
+}   
+
+.info_block p {
+    margin: 0; /* Remove margens do parágrafo */
+    font-size: 18px; /* Tamanho da fonte do parágrafo */
+    color: black; /* Cor do texto do parágrafo */
+}
+
+.arrow_down {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid green; /* Cabeça da seta */
+    flex-shrink: 0; /* Garante que a seta não seja redimensionada */
+    top: 3px; /* Abaixa a cabeça da seta em 3px */
+    transform: translateY(3px); /* Move a cabeça da seta 3px para baixo */
+}
+
+.arrow_down::before {
+    content: '';
+    position: absolute;
+    top: -25px; /* Posiciona o tronco abaixo da cabeça */
+    left: -5px; /* Centraliza o tronco */
+    width: 10px; /* Largura do tronco */
+    height: 20px; /* Altura do tronco */
+    background-color: green; /* Cor do tronco */
+}
+
+/* Nova página de rolagem */
+.button_page {
+    background-color: white; /* Fundo branco */
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    display: flex; /* Usa flexbox para alinhar os botões */
+    justify-content: center; /* Centraliza os botões no eixo horizontal */
+    align-items: center; /* Centraliza os botões no eixo vertical */
+    box-sizing: border-box; /* Inclui padding e bordas no tamanho total */
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+
+/* Estilo dos botões */
+.black_button {
+    display: inline-block; /* Garante que o link se comporte como um botão */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    background-color: black; /* Fundo preto */
+    color: white; /* Texto branco */
+    border: none; /* Remove bordas */
+    padding: 20px 40px; /* Espaçamento interno */
+    margin: 0 50px; /* Espaçamento horizontal entre os botões */
+    font-size: 32px; /* Tamanho da fonte */
+    cursor: pointer; /* Mostra o cursor de clique */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s, color 0.3s; /* Animação para hover */
+}
+
+.black_button:hover {
+    background-color: green; /* Muda o fundo para verde */
+    color: black; /* Muda o texto para preto */
+}

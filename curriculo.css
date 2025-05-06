@@ -1,0 +1,44 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo_barra {
+    background-color: black;
+    width: 100vw; /* Largura total da tela */
+    height: 25vh;  /* Um quarto da altura da tela */
+    display: flex;
+    justify-content: flex-start; /* Alinha à esquerda */
+    align-items: center;         /* Centraliza verticalmente */
+    box-sizing: border-box;
+    padding-left: 40px; /* Espaçamento da borda esquerda */
+}
+
+.titulo_barra a {
+    text-decoration: none;
+}
+
+.titulo_barra h1 {
+    color: white;
+    font-size: 48px;
+    margin: 0;
+}
+
+.corpo {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    position: relative;
+    height: 48px;
+    padding: 20px;
+    color: blue;
+}
+
+
+.img_2 {
+    width: 750px; /* Ajuste o valor para o tamanho desejado */
+    height: auto; /* Mantém a proporção da imagem */
+    padding-left: 550px;
+}

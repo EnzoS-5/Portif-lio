@@ -1,0 +1,66 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo_barra {
+    background-color: black;
+    width: 100vw; /* Largura total da tela */
+    height: 25vh;  /* Um quarto da altura da tela */
+    display: flex;
+    justify-content: flex-start; /* Alinha à esquerda */
+    align-items: center;         /* Centraliza verticalmente */
+    box-sizing: border-box;
+    padding-left: 40px; /* Espaçamento da borda esquerda */
+}
+
+.titulo_barra a {
+    text-decoration: none;
+}
+
+.titulo_barra h1 {
+    color: white;
+    font-size: 48px;
+    margin: 0;
+}
+
+
+.facebook {
+    color: azul; /* Cor do Facebook */
+    font-size: 24px; /* Tamanho do ícone */
+    margin-right: 10px; /* Espaço à direita do ícone */
+    padding-left: 10px;
+}
+
+.facebook img {
+    width: 250px; /* Tamanho do ícone */
+    height: 250px; /* Tamanho do ícone */
+}
+
+
+.email {
+    color: azul; /* Cor do email */
+    font-size: 24px; /* Tamanho do ícone */
+    margin-right: 10px; /* Espaço à direita do ícone */
+    padding-left: 35px;
+}
+
+.email img {
+    width: 200px; /* Tamanho do ícone */
+    height: 200px; /* Tamanho do ícone */
+}
+
+
+.linkedin {
+    color: azul; /* Cor do LinkedIn */
+    font-size: 24px; /* Tamanho do ícone */
+    margin-right: 10px; /* Espaço à direita do ícone */
+    padding-left: 10px;
+}
+
+.linkedin img {
+    width: 250px; /* Tamanho do ícone */
+    height: 250px; /* Tamanho do ícone */
+}
